@@ -19,3 +19,6 @@ usort($shows, 'triNote');
 
 //On ne choisit que les 3 meilleures séries
 $ratingShows = array_slice($shows, 0, 3);
+
+//Page classement
+$ratingShows2 = array_slice($shows, 0, 3);

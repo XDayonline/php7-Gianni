@@ -16,3 +16,5 @@ function triPopularite($showA, $showB) {
 usort($shows, 'triPopularite');
 
 $popularShows = array_slice($shows, 0, 3);
+
+$popularShows2 = array_slice($shows, 0, 10);

@@ -77,7 +77,7 @@
                         <th scope="col">Série</th>
                         <th scope="col">
                             Note
-                            <a href="clasement.php"><i class="fa fa-sort-down"></i></a>
+                            <a href="classement.php"><i class="fa fa-sort-down"></i></a>
                         </th>
                         <th scope="col">
                             Nombre de personnes qui regardent
@@ -86,6 +86,11 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php
+                    require_once (__DIR__ . '/src/series_populaires.php');
+                    for($i=0; $i<count($popularShows2); $i++){
+
+                    ?>
                     <tr>
                         <th scope="row">1</th>
                         <td><a href="serie.php">Game of Thrones</a></td>
@@ -100,146 +105,7 @@
                         </td>
                         <td>250 000</td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>250 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>240 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>230 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td><a href="serie.html">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>220 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td><a href="serie.html">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>210 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>200 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>190 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>180 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>250 000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <td><a href="serie.php">Game of Thrones</a></td>
-                        <td>
-                                    <span class="stars text-info" data-toggle="tooltip" data-placement="top" title="4.80">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-half"></i>
-                                    </span>
-                        </td>
-                        <td>170 000</td>
-                    </tr>
+                    <?php } ?>
                     </tbody>
                 </table>
 

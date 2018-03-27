@@ -40,7 +40,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="aleatoire.php">
-                    <i class="fas fa-random"></i> Une série aléatoire
+                    <i class="fas fa-random"></i> Une   série aléatoire
                 </a>
             </li>
         </ul>
