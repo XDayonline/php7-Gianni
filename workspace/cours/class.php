@@ -16,10 +16,9 @@ class Souris{
     {
         $this->clicdroit = $clicdroit;
     }
-
     public function __toString(){
-        return "\nClic ".$this->clicdroit." ".$this->dpi." ".$this->eclairage." ".$this->boutonsurlecote;
-    }
+    return "\nClic ".$this->clicdroit." ".$this->dpi." ".$this->eclairage." ".$this->boutonsurlecote;
+}
 }
 
 $maSouris = new Souris("non activé");
