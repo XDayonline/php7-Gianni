@@ -1,21 +1,28 @@
-<?
-class Souris
-{
-    public $clicdroit;
-    public function enleverClic()
-    {
-        $this->clicdroit = "non activé";
-    }
+<?php
+$dsn = 'mysql:dbname=php;host=127.0.0.1';
+$user = 'root';
+$password = '';
+$connection = new PDO($dsn, $user, $password);
+
+$statement = $connection->prepare("
+        SELECT nom
+        FROM nom
+        ");
+$statement->execute();
+
+class Souris{
+    public $clicdroit = "non activé";
     public function __construct($clicdroit)
     {
         $this->clicdroit = $clicdroit;
     }
     public function __toString(){
-        return "Clic ".$this->clicdroit;
+        return $this->clicdroit;
     }
 }
 $sourisnonallume = new Souris("non activé");
 $sourisallume = new Souris("activé");
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,9 +42,18 @@ $sourisallume = new Souris("activé");
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">Souris</h1>
-            <p><?php print $sourisallume->__toString();?></p>
+            <pre>
+                <?php
+                print "\n".$sourisallume->__toString()."\n";
+                print $sourisnonallume->__toString();
+                ?>
+            </pre>
         </div>
     </div>
 </main>
+
+<footer class="container">
+    <p>&copy; Bootstrap 2018</p>
+</footer>
 </body>
 </html>

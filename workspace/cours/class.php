@@ -8,7 +8,6 @@ class Souris{
     public function clic(){
         $this->clicdroit = "activé";
     }
-
     public function enleverClic(){
         $this->clicdroit = "non activé";
     }
@@ -18,7 +17,7 @@ class Souris{
     }
     public function __toString(){
     return "\nClic ".$this->clicdroit." ".$this->dpi." ".$this->eclairage." ".$this->boutonsurlecote;
-}
+    }
 }
 
 $maSouris = new Souris("non activé");
